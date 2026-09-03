@@ -61,7 +61,7 @@ export default function Premium() {
 
             
            <a   href="#download"
-              className="inline-flex items-center justify-center w-full rounded-full bg-premium px-7 py-3.5 text-sm font-medium text-ink hover:bg-premium/90 transition-colors"
+              className="pressable inline-flex items-center justify-center w-full rounded-full bg-premium px-7 py-3.5 text-sm font-medium text-ink hover:bg-premium/90"
             >
               Commencer l&apos;essai gratuit
             </a>

@@ -29,4 +29,33 @@
     background: radial-gradient(circle, rgba(139, 127, 214, 0.2) 0%, transparent 70%);
     filter: blur(50px);
   }
+
+  .pressable {
+    transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+  }
+
+  .pressable:hover {
+    transform: translateY(-2px);
+  }
+
+  .pressable:active {
+    transform: translateY(1px) scale(0.97);
+    transition-duration: 80ms;
+  }
+
+  .pressable:focus-visible {
+    outline: 3px solid color-mix(in srgb, var(--color-premium) 55%, transparent);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .pressable {
+      transition: none;
+    }
+
+    .pressable:hover,
+    .pressable:active {
+      transform: none;
+    }
+  }
 }

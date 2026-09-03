@@ -27,13 +27,13 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
             
             <a  href="#download"
-              className="inline-flex items-center justify-center rounded-full bg-ink px-7 py-3.5 text-sm font-medium text-surface hover:bg-ink/90 transition-colors"
+              className="pressable inline-flex items-center justify-center rounded-full bg-ink px-7 py-3.5 text-sm font-medium text-surface hover:bg-ink/90"
             >
               Télécharger l&apos;app
             </a>
             
            <a   href="#how-it-works"
-              className="inline-flex items-center justify-center rounded-full border border-ink/15 px-7 py-3.5 text-sm font-medium hover:bg-ink/5 transition-colors"
+              className="pressable inline-flex items-center justify-center rounded-full border border-ink/15 px-7 py-3.5 text-sm font-medium hover:bg-ink/5"
             >
               Comment ça marche
             </a>

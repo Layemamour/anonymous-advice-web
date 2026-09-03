@@ -27,7 +27,7 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
-        <a href="#" className="text-lg font-semibold tracking-tight">
+        <a href="#" className="pressable text-lg font-semibold tracking-tight">
           Kay<span className="text-premium">Confesser</span>
         </a>
 
@@ -36,7 +36,7 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-ink/70 hover:text-ink transition-colors"
+              className="pressable text-sm text-ink/70 hover:text-ink transition-colors"
             >
               {link.label}
             </a>
@@ -45,12 +45,12 @@ export default function Header() {
 
           <a
            href="#download"
-          className="hidden md:inline-flex items-center rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-surface hover:scale-105 hover:shadow-lg transition-all"
+          className="pressable hidden md:inline-flex items-center rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-surface hover:shadow-lg"
         >
           Télécharger
         </a>
 
-        <button className="md:hidden" onClick={() => setOpen(!open)} aria-label="Menu">
+        <button className="pressable md:hidden" onClick={() => setOpen(!open)} aria-label="Menu">
           <div className="w-6 h-0.5 bg-ink mb-1.5" />
           <div className="w-6 h-0.5 bg-ink mb-1.5" />
           <div className="w-6 h-0.5 bg-ink" />
@@ -64,7 +64,7 @@ export default function Header() {
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="py-2 text-sm text-ink/70"
+              className="pressable py-2 text-sm text-ink/70"
             >
               {link.label}
             </a>
@@ -72,7 +72,7 @@ export default function Header() {
           <a
             href="#download"
             onClick={() => setOpen(false)}
-            className="mt-2 inline-flex items-center justify-center rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-surface"
+            className="pressable mt-2 inline-flex items-center justify-center rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-surface"
           >
             Télécharger
           </a>
