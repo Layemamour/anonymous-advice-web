@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-premium: #D7A83E;
+  --color-ink: #1A1D23;
+  --color-surface: #F7F5F2;
+  --color-accent: #3E5C76;
+  --color-rose: #C97B84;
+  --color-sage: #6B8F71;
+  --color-lavender: #8B7FD6;
+  --font-sans: var(--font-inter), sans-serif;
+  --font-serif: var(--font-serif), serif;
+}
+
+@layer utilities {
+  .glow-gold {
+    background: radial-gradient(circle, rgba(215, 168, 62, 0.22) 0%, transparent 70%);
+    filter: blur(50px);
+  }
+  .glow-rose {
+    background: radial-gradient(circle, rgba(201, 123, 132, 0.2) 0%, transparent 70%);
+    filter: blur(50px);
+  }
+  .glow-sage {
+    background: radial-gradient(circle, rgba(107, 143, 113, 0.2) 0%, transparent 70%);
+    filter: blur(50px);
+  }
+  .glow-lavender {
+    background: radial-gradient(circle, rgba(139, 127, 214, 0.2) 0%, transparent 70%);
+    filter: blur(50px);
+  }
+}
