@@ -1,5 +1,6 @@
 import PhoneMockup from "./PhoneMockup";
 import Reveal from "./Reveal";
+import { Bird, Cat, Check, ChatCircle, Heart, Star } from "@phosphor-icons/react/ssr";
 
 export default function Hero() {
   return (
@@ -39,8 +40,13 @@ export default function Hero() {
             </a>
           </div>
 
-          <p className="text-xs text-ink/40">
-            ★★★★★ Pensé pour rester anonyme — dès la première confession.
+          <p className="text-xs text-ink/40 inline-flex items-center gap-0.5">
+            <span className="inline-flex text-premium" aria-label="5 étoiles">
+              {Array.from({ length: 5 }, (_, index) => (
+                <Star key={index} size={12} weight="fill" />
+              ))}
+            </span>
+            <span className="ml-1">Pensé pour rester anonyme — dès la première confession.</span>
           </p>
         </Reveal>
 
@@ -74,7 +80,7 @@ function MiniFeedScreen() {
         <div className="rounded-2xl bg-white shadow-sm p-3.5">
           <div className="flex items-center gap-2 mb-2">
             <div className="w-7 h-7 rounded-full bg-accent/20 flex items-center justify-center text-[10px]">
-              🦊
+              <Cat size={16} weight="duotone" />
             </div>
             <p className="text-[11px] font-medium">Renard #4821</p>
           </div>
@@ -82,14 +88,14 @@ function MiniFeedScreen() {
             Je pense démissionner mais j&apos;ai peur de regretter.
           </p>
           <div className="flex items-center gap-3 mt-2.5 text-[9px] text-ink/40">
-            <span>💛 34</span>
-            <span>💬 12 conseils</span>
+            <span className="inline-flex items-center gap-1"><Heart size={11} weight="fill" /> 34</span>
+            <span className="inline-flex items-center gap-1"><ChatCircle size={11} weight="fill" /> 12 conseils</span>
           </div>
         </div>
         <div className="rounded-2xl bg-white shadow-sm p-3.5">
           <div className="flex items-center gap-2 mb-2">
             <div className="w-7 h-7 rounded-full bg-premium/25 flex items-center justify-center text-[10px]">
-              🦉
+              <Bird size={16} weight="duotone" />
             </div>
             <p className="text-[11px] font-medium">Hibou #1092</p>
           </div>
@@ -122,7 +128,7 @@ function MiniJournalScreen() {
       <div className="space-y-1.5">
         <div className="flex items-center gap-2 text-[9px]">
           <div className="w-3.5 h-3.5 rounded bg-premium text-white flex items-center justify-center text-[7px]">
-            ✓
+            <Check size={9} weight="bold" />
           </div>
           <span className="text-ink/60 line-through">Épargner 3 mois</span>
         </div>

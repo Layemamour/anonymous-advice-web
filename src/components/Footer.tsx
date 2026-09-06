@@ -1,3 +1,5 @@
+import { Heart } from "@phosphor-icons/react/ssr";
+
 export default function Footer() {
   return (
     <footer className="border-t border-ink/5 py-16 bg-ink text-surface">
@@ -39,8 +41,7 @@ export default function Footer() {
 
         <div className="pt-6 border-t border-surface/10 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-surface/45">
-            © {new Date().getFullYear()} KayConfesser. Fait avec 💛 pour
-            ceux qui portent un poids en silence.
+            © {new Date().getFullYear()} KayConfesser. Fait avec <Heart size={12} weight="fill" className="inline" /> pour ceux qui portent un poids en silence.
           </p>
         </div>
       </div>

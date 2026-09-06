@@ -1,5 +1,6 @@
 import FeatureRow from "./FeatureRow";
 import PhoneMockup from "./PhoneMockup";
+import { ChartScatter, Heart, PencilSimple } from "@phosphor-icons/react/ssr";
 
 export default function BubbleSection() {
   return (
@@ -18,19 +19,19 @@ export default function BubbleSection() {
       description="Une confession, un sondage, un conseil — tout se retrouve au même endroit, sous un pseudo qui ne révèle jamais qui tu es."
       features={[
         {
-          icon: "✍️",
+          icon: PencilSimple,
           title: "Confessions libres",
           description:
             "Écris ce qui te pèse, choisis une catégorie, publie en quelques secondes.",
         },
         {
-          icon: "🗳️",
+          icon: ChartScatter,
           title: "Sondages intégrés",
           description:
             "Hésite entre plusieurs options ? Laisse la communauté t'aider à trancher.",
         },
         {
-          icon: "💛",
+          icon: Heart,
           title: "Réactions simples",
           description:
             "Soutien ou « moi aussi » — sans likes ni pression de popularité.",

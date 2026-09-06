@@ -1,5 +1,6 @@
 import FeatureRow from "./FeatureRow";
 import PhoneMockup from "./PhoneMockup";
+import { Check, Envelope, Notebook } from "@phosphor-icons/react/ssr";
 
 export default function JournalSection() {
   return (
@@ -18,19 +19,19 @@ export default function JournalSection() {
       description="Une confession n'est qu'un début. Note tes options, suis tes progrès, et garde une trace de ton chemin — un espace que toi seul peux voir."
       features={[
         {
-          icon: "✅",
+          icon: Check,
           title: "Suivi de résolution",
           description:
             "Une checklist personnelle des options que tu envisages.",
         },
         {
-          icon: "📓",
+          icon: Notebook,
           title: "Journal chronologique",
           description:
             "Ajoute des mises à jour courtes sur l'évolution de ta situation.",
         },
         {
-          icon: "📬",
+          icon: Envelope,
           title: "Digest personnalisé",
           description:
             "Un résumé hebdomadaire des tendances dans tes catégories suivies.",
@@ -53,7 +54,7 @@ export default function JournalSection() {
                 <div className="space-y-1.5">
                   <div className="flex items-center gap-2 text-[9px]">
                     <div className="w-3.5 h-3.5 rounded bg-premium flex items-center justify-center text-white text-[7px]">
-                      ✓
+                      <Check size={9} weight="bold" />
                     </div>
                     <span className="text-ink/70 line-through decoration-ink/30">
                       Épargner 3 mois de salaire

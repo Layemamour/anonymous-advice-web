@@ -1,7 +1,8 @@
 import Reveal from "./Reveal";
+import type { Icon } from "@phosphor-icons/react";
 
 type Feature = {
-  icon: string;
+  icon: Icon;
   title: string;
   description: string;
 };
@@ -46,7 +47,7 @@ export default function FeatureRow({
             <ul className="space-y-5">
               {features.map((f) => (
                 <li key={f.title} className="flex gap-4">
-                  <span className="text-xl leading-none">{f.icon}</span>
+                  <f.icon size={22} weight="duotone" className="shrink-0" />
                   <div>
                     <p className="font-medium text-sm mb-1">{f.title}</p>
                     <p className="text-xs text-ink/55 leading-relaxed">

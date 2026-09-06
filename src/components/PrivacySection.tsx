@@ -1,21 +1,22 @@
 import Reveal from "./Reveal";
+import { IdentificationBadge, LockKey, Scales } from "@phosphor-icons/react/ssr";
 
 export default function PrivacySection() {
   const points = [
     {
-      icon: "🎭",
+      icon: IdentificationBadge,
       title: "Identité anonyme générée",
       description:
         "Un pseudo animal + une couleur, jamais lié à ton nom ou ton compte réel.",
     },
     {
-      icon: "🔒",
+      icon: LockKey,
       title: "Confidentialité par conception",
       description:
         "Ton carnet privé et ton journal ne sont visibles que par toi, jamais par la communauté.",
     },
     {
-      icon: "⚖️",
+      icon: Scales,
       title: "Premium n'achète jamais la priorité",
       description:
         "Un utilisateur gratuit reçoit de l'aide aussi vite qu'un membre Premium — toujours.",
@@ -39,7 +40,7 @@ export default function PrivacySection() {
         <div className="grid md:grid-cols-3 gap-10 text-left">
           {points.map((p, i) => (
             <Reveal key={p.title} delay={i * 120}>
-              <span className="text-2xl">{p.icon}</span>
+              <p.icon size={28} weight="duotone" />
               <h3 className="text-base font-medium mt-4 mb-2">{p.title}</h3>
               <p className="text-sm text-surface/60 leading-relaxed">
                 {p.description}

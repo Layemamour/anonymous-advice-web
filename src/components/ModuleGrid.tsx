@@ -1,14 +1,24 @@
 import Reveal from "./Reveal";
+import {
+  ChartScatter,
+  ChatCircleDots,
+  Envelope,
+  Medal,
+  Notebook,
+  PencilSimple,
+  RocketLaunch,
+  ShieldCheck,
+} from "@phosphor-icons/react/ssr";
 
 const modules = [
-  { icon: "✍️", title: "Confessions", description: "Partage ce qui te pèse, librement.", color: "bg-premium/15" },
-  { icon: "🗳️", title: "Sondages", description: "Laisse la communauté t'aider à trancher.", color: "bg-accent/15" },
-  { icon: "💬", title: "Fil de conseils", description: "Des réponses sincères, sous chaque confession.", color: "bg-rose/15" },
-  { icon: "📓", title: "Carnet privé", description: "Suivi personnel, visible par toi seul.", color: "bg-sage/15" },
-  { icon: "📬", title: "Digest hebdo", description: "Les tendances de tes catégories suivies.", color: "bg-lavender/15" },
-  { icon: "🏅", title: "Badge de confiance", description: "Pour les conseils qui aident vraiment.", color: "bg-premium/15" },
-  { icon: "🛡️", title: "Modération", description: "Une équipe veille sur chaque signalement.", color: "bg-accent/15" },
-  { icon: "🚀", title: "Confession boostée", description: "Plus de visibilité, jamais plus de priorité.", color: "bg-rose/15" },
+  { icon: PencilSimple, title: "Confessions", description: "Partage ce qui te pèse, librement.", color: "bg-premium/15" },
+  { icon: ChartScatter, title: "Sondages", description: "Laisse la communauté t'aider à trancher.", color: "bg-accent/15" },
+  { icon: ChatCircleDots, title: "Fil de conseils", description: "Des réponses sincères, sous chaque confession.", color: "bg-rose/15" },
+  { icon: Notebook, title: "Carnet privé", description: "Suivi personnel, visible par toi seul.", color: "bg-sage/15" },
+  { icon: Envelope, title: "Digest hebdo", description: "Les tendances de tes catégories suivies.", color: "bg-lavender/15" },
+  { icon: Medal, title: "Badge de confiance", description: "Pour les conseils qui aident vraiment.", color: "bg-premium/15" },
+  { icon: ShieldCheck, title: "Modération", description: "Une équipe veille sur chaque signalement.", color: "bg-accent/15" },
+  { icon: RocketLaunch, title: "Confession boostée", description: "Plus de visibilité, jamais plus de priorité.", color: "bg-rose/15" },
 ];
 
 export default function ModuleGrid() {
@@ -29,7 +39,7 @@ export default function ModuleGrid() {
           {modules.map((m, i) => (
             <Reveal key={m.title} delay={(i % 4) * 100}>
               <div className={`w-11 h-11 rounded-xl ${m.color} flex items-center justify-center text-xl mb-3.5 shadow-sm`}>
-                {m.icon}
+                <m.icon size={22} weight="duotone" />
               </div>
               <h3 className="text-base font-medium mb-1.5">{m.title}</h3>
               <p className="text-xs text-ink/55 leading-relaxed">{m.description}</p>
