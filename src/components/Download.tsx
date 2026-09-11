@@ -1,4 +1,11 @@
 import Reveal from "./Reveal";
+import { DownloadSimple } from "@phosphor-icons/react/ssr";
+
+// URL de l'app réelle (Next.js, PWA installable — manifest + service worker) : domaine Vercel
+// actuel, en attendant une éventuelle sous-domaine dédiée (ex. app.kayconfesser.com) que la
+// personne responsable du DNS configurerait de son côté — ce composant n'a pas besoin de changer
+// pour ça, seule cette constante serait à mettre à jour.
+const APP_URL = "https://kayconfesserapp.vercel.app";
 
 export default function Download() {
   return (
@@ -21,51 +28,24 @@ export default function Download() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button
-            disabled
-            className="pressable inline-flex items-center justify-center gap-3 rounded-xl border border-ink/15 px-6 py-3.5 text-sm font-medium text-ink/40 cursor-not-allowed"
-          >
-            <AppleIcon />
-            <span>
-              Bientôt sur l&apos;<span className="font-semibold">App Store</span>
-            </span>
-          </button>
-
-          <button
-            disabled
-            className="pressable inline-flex items-center justify-center gap-3 rounded-xl border border-ink/15 px-6 py-3.5 text-sm font-medium text-ink/40 cursor-not-allowed"
-          >
-            <PlayIcon />
-            <span>
-              Bientôt sur <span className="font-semibold">Google Play</span>
-            </span>
-          </button>
+            <a
+              href={APP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pressable inline-flex items-center justify-center gap-3 rounded-full bg-ink px-7 py-3.5 text-sm font-medium text-surface hover:bg-ink/90"
+            >
+              <DownloadSimple size={20} weight="bold" />
+              <span>Télécharger l&apos;app</span>
+            </a>
           </div>
 
-          <p className="text-xs text-ink/40 mt-6">
-          En cours de soumission — disponible très prochainement.
+          <p className="text-xs text-ink/40 mt-6 max-w-sm mx-auto">
+          Pas d&apos;App Store, pas de Google Play : ouvre le lien, puis choisis
+          « Ajouter à l&apos;écran d&apos;accueil » (iPhone) ou « Installer l&apos;application »
+          (Android) depuis ton navigateur.
           </p>
         </Reveal>
       </div>
     </section>
-  );
-}
-
-function AppleIcon() {
-  return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-    </svg>
-  );
-}
-
-function PlayIcon() {
-  return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M3.6 2.4c-.35.35-.6.9-.6 1.6v16c0 .7.25 1.25.6 1.6l.1.08L13 12.4v-.8L3.7 2.32l-.1.08z" />
-      <path d="M16.5 15.9l-3-3v-.8l3-3 3.9 2.2c.8.5.8 1.4 0 1.9l-3.9 2.7z" opacity=".7" />
-      <path d="M13.5 12.5l-9.8 9.9c.35.35.9.4 1.5.05l11.3-6.4-3-3.55z" opacity=".85" />
-      <path d="M13.5 11.5l3-3.55-11.3-6.4c-.6-.35-1.15-.3-1.5.05l9.8 9.9z" />
-    </svg>
   );
 }
