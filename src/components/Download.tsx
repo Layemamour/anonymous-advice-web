@@ -1,11 +1,9 @@
 import Reveal from "./Reveal";
 import { DownloadSimple } from "@phosphor-icons/react/ssr";
 
-// URL de l'app réelle (Next.js, PWA installable — manifest + service worker) : domaine Vercel
-// actuel, en attendant une éventuelle sous-domaine dédiée (ex. app.kayconfesser.com) que la
-// personne responsable du DNS configurerait de son côté — ce composant n'a pas besoin de changer
-// pour ça, seule cette constante serait à mettre à jour.
-const APP_URL = "https://kayconfesserapp.vercel.app";
+// URL de l'app réelle (Next.js, PWA installable — manifest + service worker), sous-domaine
+// dédié désormais configuré et testé dans Vercel.
+const APP_URL = "https://app.kayconfesser.com";
 
 export default function Download() {
   return (
@@ -40,7 +38,7 @@ export default function Download() {
           </div>
 
           <p className="text-xs text-ink/40 mt-6 max-w-sm mx-auto">
-          Pas d&apos;App Store, pas de Google Play : ouvre le lien, puis choisis
+          Ouvre le lien, puis choisis
           « Ajouter à l&apos;écran d&apos;accueil » (iPhone) ou « Installer l&apos;application »
           (Android) depuis ton navigateur.
           </p>
