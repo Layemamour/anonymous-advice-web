@@ -43,7 +43,7 @@ export default function JournalSection() {
             <div className="px-4 py-3 border-b border-ink/5 bg-white">
               <span className="text-[11px] font-medium">Mon carnet privé</span>
               <span className="ml-2 text-[8px] bg-premium/15 text-premium px-1.5 py-0.5 rounded-full">
-                Anonyme+
+                KayConfesser+
               </span>
             </div>
             <div className="p-3 space-y-3">

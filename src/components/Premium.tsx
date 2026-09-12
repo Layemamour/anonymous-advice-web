@@ -27,7 +27,7 @@ export default function Premium() {
         </h2>
         <p className="text-ink/60 mb-12 max-w-md mx-auto">
           L&apos;aide reste la même pour tout le monde, toujours aussi
-          rapide. Anonyme+ ajoute simplement des outils pour mieux
+          rapide. KayConfesser+ ajoute simplement des outils pour mieux
           t&apos;accompagner.
         </p>
 
@@ -36,7 +36,7 @@ export default function Premium() {
 
           <div className="relative">
             <span className="inline-flex items-center rounded-full bg-premium/15 px-4 py-1.5 text-xs font-medium text-premium mb-6">
-              <Heart size={14} weight="fill" /> Anonyme+
+              <Heart size={14} weight="fill" /> KayConfesser+
             </span>
 
             <p className="text-sm text-surface/50 mb-1">Essai gratuit 7 jours</p>
