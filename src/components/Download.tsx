@@ -1,9 +1,5 @@
 import Reveal from "./Reveal";
-import { DownloadSimple } from "@phosphor-icons/react/ssr";
-
-// URL de l'app réelle (Next.js, PWA installable — manifest + service worker), sous-domaine
-// dédié désormais configuré et testé dans Vercel.
-const APP_URL = "https://app.kayconfesser.com";
+import DownloadButton from "./DownloadButton";
 
 export default function Download() {
   return (
@@ -25,23 +21,7 @@ export default function Download() {
           sans juger — sous une identité qui reste toujours la tienne.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href={APP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="pressable inline-flex items-center justify-center gap-3 rounded-full bg-ink px-7 py-3.5 text-sm font-medium text-surface hover:bg-ink/90"
-            >
-              <DownloadSimple size={20} weight="bold" />
-              <span>Télécharger l&apos;app</span>
-            </a>
-          </div>
-
-          <p className="text-xs text-ink/40 mt-6 max-w-sm mx-auto">
-          Ouvre le lien, puis choisis
-          « Ajouter à l&apos;écran d&apos;accueil » (iPhone) ou « Installer l&apos;application »
-          (Android) depuis ton navigateur.
-          </p>
+          <DownloadButton />
         </Reveal>
       </div>
     </section>
