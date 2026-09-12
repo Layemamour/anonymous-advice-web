@@ -3,7 +3,9 @@
 import { useSyncExternalStore } from "react";
 import { DownloadSimple } from "@phosphor-icons/react/ssr";
 
-const APP_URL = "https://app.kayconfesser.com";
+// Vers la page d'installation dédiée (pas directement l'app) : l'utilisateur y obtient un vrai
+// geste d'installation PWA avant d'entrer dans le feed, plutôt que d'atterrir directement dedans.
+const APP_URL = "https://app.kayconfesser.com/install";
 
 // L'installation "en un clic" (beforeinstallprompt) ne peut techniquement se produire que sur
 // l'origine qui possède le manifest PWA (app.kayconfesser.com) — jamais depuis ce site vitrine,
