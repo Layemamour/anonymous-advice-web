@@ -22,7 +22,7 @@ export default function Home() {
         <JournalSection />
         <PrivacySection />
         <ModuleGrid />
-        <Premium />
+        {/* <Premium /> */}
         <Download />
       </main>
       <Footer />
