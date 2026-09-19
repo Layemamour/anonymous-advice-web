@@ -32,6 +32,14 @@ export default function Footer() {
               </p>
               <ul className="space-y-2 text-sm text-surface/65">
                 <li><a href="#" className="hover:text-surface transition-colors">Confidentialité</a></li>
+		<li>
+  <a
+    href="/suppression-compte"
+    className="hover:text-surface transition-colors"
+  >
+    Suppression du compte
+  </a>
+</li>
                 <li><a href="#" className="hover:text-surface transition-colors">Conditions</a></li>
                 <li><a href="mailto:contact@kayconfesser.app" className="hover:text-surface transition-colors">Contact</a></li>
               </ul>
