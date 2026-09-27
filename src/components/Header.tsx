@@ -15,7 +15,7 @@ export default function Header() {
   const links = [
     { label: "Comment ça marche", href: "#how-it-works" },
     { label: "Fonctionnalités", href: "#features" },
-    { label: "Premium", href: "#premium" },
+    // { label: "Premium", href: "#premium" },
   ];
 
   return (
