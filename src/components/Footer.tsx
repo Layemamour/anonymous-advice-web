@@ -23,7 +23,7 @@ export default function Footer() {
               <ul className="space-y-2 text-sm text-surface/65">
                 <li><a href="#how-it-works" className="hover:text-surface transition-colors">Comment ça marche</a></li>
                 <li><a href="#features" className="hover:text-surface transition-colors">Fonctionnalités</a></li>
-                <li><a href="#premium" className="hover:text-surface transition-colors">Premium</a></li>
+                {/* <li><a href="#premium" className="hover:text-surface transition-colors">Premium</a></li> */}
               </ul>
             </div>
             <div>
@@ -31,7 +31,7 @@ export default function Footer() {
                 Légal
               </p>
               <ul className="space-y-2 text-sm text-surface/65">
-                <li><a href="#" className="hover:text-surface transition-colors">Confidentialité</a></li>
+                <li><a href="/confidentialite" className="hover:text-surface transition-colors">Confidentialité</a></li>
 		<li>
   <a
     href="/suppression-compte"
@@ -40,8 +40,8 @@ export default function Footer() {
     Suppression du compte
   </a>
 </li>
-                <li><a href="#" className="hover:text-surface transition-colors">Conditions</a></li>
-                <li><a href="mailto:contact@kayconfesser.app" className="hover:text-surface transition-colors">Contact</a></li>
+                <li><a href="/securite-enfants" className="hover:text-surface transition-colors">Conditions</a></li>
+                <li><a href="mailto:layemamour123@gmail.com" className="hover:text-surface transition-colors">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -49,7 +49,7 @@ export default function Footer() {
 
         <div className="pt-6 border-t border-surface/10 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-surface/45">
-            © {new Date().getFullYear()} KayConfesser. Fait avec <Heart size={12} weight="fill" className="inline" /> pour ceux qui portent un poids en silence.
+            © {new Date().getFullYear()} KayConfesser. Fait par <Heart size={12} weight="fill" className="inline" /> pour ceux qui portent un poids en silence.
           </p>
         </div>
       </div>

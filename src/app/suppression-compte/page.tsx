@@ -29,10 +29,10 @@ export default function AccountDeletionPage() {
               <p className="text-sm text-ink/60 leading-relaxed mt-3">
                 Envoie-nous une demande à{" "}
                 <a
-                  href="mailto:contact@kayconfesser.app?subject=Demande%20de%20suppression%20de%20compte"
+                  href="mailto:layemamour123@gmail.com?subject=Demande%20de%20suppression%20de%20compte"
                   className="text-premium underline underline-offset-4"
                 >
-                  contact@kayconfesser.app
+                  layemamour123@gmail.com
                 </a>{" "}
                 depuis l&apos;adresse e-mail associée à ton compte, en
                 indiquant que tu souhaites supprimer ton compte KayConfesser.
@@ -68,7 +68,7 @@ export default function AccountDeletionPage() {
                   href="mailto:contact@kayconfesser.app"
                   className="text-premium underline underline-offset-4"
                 >
-                  contact@kayconfesser.app
+                  layemamour123@gmail.com
                 </a>
                 .
               </p>
