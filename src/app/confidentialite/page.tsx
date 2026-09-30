@@ -11,6 +11,12 @@ export default function ConfidentialitePage() {
     <main className="min-h-screen bg-[#F8F7FC] px-4 py-10 text-[#1F1F2E] sm:px-6">
       <article className="mx-auto max-w-3xl rounded-2xl bg-white p-6 shadow-sm sm:p-10">
         <header className="mb-10">
+          <a
+          href="/"
+          className="text-sm text-ink/60 hover:text-ink transition-colors"
+        >
+          ← Retour à KayConfesser
+        </a>
           <p className="mb-2 text-sm font-medium text-[#6C63FF]">
             KayConfesser
           </p>
@@ -267,10 +273,10 @@ export default function ConfidentialitePage() {
 
             <p className="mt-3">
               <a
-                href="mailto:contact@kayconfesser.app"
+                href="layemamour123@gmail.com"
                 className="font-medium text-[#6C63FF] underline underline-offset-4"
               >
-                contact@kayconfesser.app
+                layemamour@gmail.com
               </a>
             </p>
           </section>

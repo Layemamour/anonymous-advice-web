@@ -15,6 +15,12 @@ export default function SecuriteEnfantsPage() {
     <main className="min-h-screen bg-[#F8F7FC] text-gray-900">
       <div className="mx-auto max-w-4xl px-6 py-16 sm:px-8">
         <header className="mb-12">
+          <a
+          href="/"
+          className="text-sm text-ink/60 hover:text-ink transition-colors"
+        >
+          ← Retour à KayConfesser
+        </a>
           <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-[#6C63FF]">
             KayConfesser
           </p>
