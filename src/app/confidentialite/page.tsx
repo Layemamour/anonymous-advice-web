@@ -276,7 +276,7 @@ export default function ConfidentialitePage() {
                 href="layemamour123@gmail.com"
                 className="font-medium text-[#6C63FF] underline underline-offset-4"
               >
-                layemamour@gmail.com
+                layemamour123@gmail.com
               </a>
             </p>
           </section>
